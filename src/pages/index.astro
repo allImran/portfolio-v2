@@ -1,9 +1,12 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import ScrollContent from '../components/ScrollContent.vue';
 ---
 
 <Layout title="Welcome to Astro.">
+	<ScrollContent type='secondary' client:load>
+	</ScrollContent>
 	<main>
 		<svg
 			class="astro-a"
