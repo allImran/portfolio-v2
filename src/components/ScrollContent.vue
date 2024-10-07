@@ -291,9 +291,6 @@ onMounted(() => {
     translate: 0 50%;
   }
 
-  body {
-  }
-
   video,
   header {
     animation: lift both linear;
