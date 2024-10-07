@@ -5,6 +5,8 @@ import react from '@astrojs/react'
 
 import vue from '@astrojs/vue';
 
+import tailwind from '@astrojs/tailwind';
+
 // https://astro.build/config
 export default defineConfig({
     integrations: [sanity({
@@ -13,5 +15,11 @@ export default defineConfig({
       // Set useCdn to false if you're building statically.
       useCdn: false,
       studioBasePath: '/admin'
-    }), react(), vue()],
+    }),
+    react(),
+    vue(),
+    tailwind({
+      applyBaseStyles: false,
+    }),
+  ],
 });

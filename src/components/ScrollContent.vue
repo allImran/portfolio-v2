@@ -273,9 +273,9 @@ onMounted(() => {
 <style>
 @import url('https://unpkg.com/normalize.css') layer(normalize);
 
-@layer normalize, base, demo, animation;
+/* @layer normalize, base, demo, animation; */
 
-@layer animation {
+/* @layer animation { */
   :root {
     timeline-scope: --buffer, --outro;
   }
@@ -414,9 +414,9 @@ onMounted(() => {
       translate: 0 var(--to, 0);
     }
   }
-}
+/* } */
 
-@layer demo {
+/* @layer demo { */
   header {
     height: 100vh;
     display: grid;
@@ -652,9 +652,9 @@ onMounted(() => {
           hsl(0 0% 100% / 0.1)
       );
   }
-}
+/* } */
 
-@layer base {
+/* @layer base { */
   :root {
     --font-size-min: 16;
     --font-size-max: 20;
@@ -744,7 +744,7 @@ onMounted(() => {
     white-space: nowrap;
     border-width: 0;
   }
-}
+/* } */
 
 div.tp-dfwv {
   position: fixed;
