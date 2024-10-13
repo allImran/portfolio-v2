@@ -71,8 +71,8 @@ onMounted(() => {
 <template>
     <div class=" timeline">
       <header>
-        <h1 class="fluid"><span>All-New</span>CSS Pro</h1>
-        <h2 class="fluid">Scroll-driven text knockout</h2>
+        <h1 class="fluid"><span>Hello</span>Welcome</h1>
+        <h2 class="fluid">Fell free to explore</h2>
       </header>
       <main>
         <div class="video-timeline">
@@ -83,7 +83,7 @@ onMounted(() => {
             <!-- First block is like calc(50vh + 0.5lh) -->
             <section class="video-mask fluid">
               <h1 class="fluid">
-                <svg
+                <!-- <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -96,13 +96,13 @@ onMounted(() => {
                     stroke-linejoin="round"
                     d="M14.25 9.75 16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0 0 20.25 18V6A2.25 2.25 0 0 0 18 3.75H6A2.25 2.25 0 0 0 3.75 6v12A2.25 2.25 0 0 0 6 20.25Z"
                   />
-                </svg>
+                </svg> -->
                 <span
                   data-gramm="false"
                   data-gramm_editor="false"
                   data-enable-grammarly="false"
                   contenteditable="true"
-                  >CSS</span
+                  >AL Emran</span
                 >
               </h1>
               <div class="svg-wrap">
