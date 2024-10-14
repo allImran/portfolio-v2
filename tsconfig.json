@@ -2,11 +2,19 @@
   "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
     "jsx": "preserve",
+    "jsxImportSource": "react",
     "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "./src/*"
-      ]
+      "@/*": ["src/*"],
+      "@layouts/*": ["src/layouts/*"],
+      "@components/*": ["src/components/*"],
+      "@ui/*": ["src/components/ui/*"],
+      "@types/*": ["src/types/*"],
+      "@lib/*": ["src/lib/*"],
+      "@query/*": ["src/query/*"],
+      "@sanity/types": ["sanity/sanity.types.ts"],
+      "@sanity/*": ["sanity/*"]
     }
-  }
+  },
+  "exclude": ["node_modules","sanity"]
 }
