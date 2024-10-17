@@ -10,7 +10,13 @@
     "moduleDetection": "force",
     "isolatedModules": true,
     "jsx": "preserve",
-    "incremental": true
+    "incremental": true,
+    "baseUrl": ".",
+    "paths": {
+      "@document/*": ["./schemaTypes/document/*"],
+      "@object/*": ["./schemaTypes/object/*"],
+      // "@components/*": ["./components/*"],
+    },
   },
   "include": ["**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]

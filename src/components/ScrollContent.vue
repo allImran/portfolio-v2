@@ -9,7 +9,7 @@ onMounted(() => {
     x: 39,
     y: 50,
     scale: 33,
-    font: 10,
+    font: 7.8,
     svg: false,
     // src: 'https://assets.codepen.io/605876/skateboarder--opt.mp4',
     src: 'https://assets.codepen.io/605876/solo-skater--opt.mp4',
@@ -78,7 +78,8 @@ onMounted(() => {
         <div class="video-timeline">
           <!-- Video sits in the background stuck-->
           <div class="video-container fluid">
-            <video src="" loop autoplay muted></video>
+            <!-- <video src="" loop autoplay muted></video> -->
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/KnpoyFkhoF4?autoplay=1&mute=1"   title="YouTube video player" frameborder="0" allow="autoplay" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <!-- This needs a 100vh mask inside of an element that's smaller in size to offset text -->
             <!-- First block is like calc(50vh + 0.5lh) -->
             <section class="video-mask fluid">
@@ -747,6 +748,7 @@ div.tp-dfwv {
   position: fixed;
   z-index: 99999;
   width: 280px;
+  display: none;
 }
 
 </style>
