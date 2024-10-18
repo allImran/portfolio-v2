@@ -8,11 +8,11 @@ const pageBuilder = defineType({
   description: 'Page Builder allows you to easily add "Modules" to your page',
   icon: Link2,
   fields: [
-    defineField({
-      name: "posts",
-      type: "array",
-      of: [{ type: "reference", to: { type: "post" } }],
-    })
+      defineField({
+        name: "posts",
+        type: "array",
+        of: [{ type: "reference", to: { type: "post" } }],
+      })
   ]
 })
 
