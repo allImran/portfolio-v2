@@ -1,13 +1,28 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import TailwindWrapper from '../components/TailwindWrapper.astro'
+import {Button} from '../components/ui/button'
+
 import Card from '../components/Card.astro';
 import ScrollContent from '../components/ScrollContent.vue';
+import { loadQuery } from '@lib/loadQuery'
+import { homeQuery } from '@/query/home'
+const { data: home } = await loadQuery({
+  query: homeQuery
+})
 // import '@/styles/globals.css'
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title={home.seo.title}>
+	<!-- <pre style="color: white">
+		{ JSON.stringify(home)}
+	</pre> -->
 	<ScrollContent type='secondary' client:load>
 	</ScrollContent>
+		<Button />
+	<TailwindWrapper>
+
+	</TailwindWrapper>
 	<main>
 		<svg
 			class="astro-a"

@@ -153,24 +153,15 @@ onMounted(() => {
             </p>
           </div>
         </section>
-        <div class="outro">
+        <!-- <div class="outro">
           <section class="follow">
             <h2 class="fluid"><span>Pretty</span>&nbsp;<span>Cool.</span></h2>
             <p>Follow for more.</p>
           </section>
           <section></section>
-        </div>
+        </div> -->
       </main>
-      <footer>
-        ┬┴┬┴┤•ᴥ•ʔ├┬┴┬┴ made by
-        <a
-          href="https://twitter.com/intent/follow?screen_name=jh3yy"
-          target="_blank"
-          rel="noreferrer noopener"
-          >@jh3yy</a
-        >
-        '24
-      </footer>
+      
     </div>
     <svg class="svg-filter">
       <defs>
