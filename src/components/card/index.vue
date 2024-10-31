@@ -1,9 +1,10 @@
 <script setup lang="ts">
 import CardItem from "./CardItem.vue";
 import CardList from "./CardList.vue";
+import { type Post } from '@sanity/types'
 
 defineProps<{
-    items: any[]
+    items: Post[]
 }>()
 </script>
 

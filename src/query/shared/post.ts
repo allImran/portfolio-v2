@@ -2,5 +2,6 @@ export const posts =`
 posts[]->{
     title,
     slug,
-    image
+    image,
+    detail
 }`

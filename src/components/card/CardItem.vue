@@ -1,3 +1,11 @@
+
+<script setup lang="ts">
+import { type Post } from '@sanity/types'
+defineProps<{
+    item: Post
+}>()
+</script>
+
 <template>
     <div class="rounded overflow-hidden shadow-lg">
         <a href="#"></a>
@@ -26,11 +34,14 @@
             </a>
         </div>
         <div class="px-6 py-4">
-            <a href="#"
-                class="font-semibold text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out">Best
-                Pizza in Town</a>
+            <a 
+                href="#"
+                class="font-semibold text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out"
+            >
+                {{  item.title }}
+            </a>
             <p class="text-gray-500 text-sm">
-                The collection of best pizza images in Newyork city
+               {{ item.detail }}
             </p>
 
             <div class="flex items- mt-10">

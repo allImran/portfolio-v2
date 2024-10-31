@@ -14,10 +14,12 @@ export default defineConfig({
       dataset: 'production',
       // Set useCdn to false if you're building statically.
       useCdn: false,
-      // studioBasePath: '/sanity'
+      stega: {
+        studioUrl: process.env.NODE_ENV === 'development' ? 'http://localhost:3333' : 'https://code-builder.sanity.studio'
+    },
     }),
     react(),
-    vue(),
+    vue({ devtools: true }),
     tailwind({
       applyBaseStyles: false,
     }),

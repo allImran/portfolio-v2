@@ -7,16 +7,14 @@ import Card from '../components/Card.astro';
 import ScrollContent from '../components/ScrollContent.vue';
 import { loadQuery } from '@lib/loadQuery'
 import { homeQuery } from '@/query/home'
-const { data: home } = await loadQuery({
+import { type Home } from '@sanity/types'
+const { data: home } = await loadQuery<Home>({
   query: homeQuery
 })
-// import '@/styles/globals.css'
 ---
 
-<Layout title={home.seo.title}>
-	<!-- <pre style="color: white">
-		{ JSON.stringify(home)}
-	</pre> -->
+<Layout title={home.seo?.title as string}>
+	
 	<ScrollContent type='secondary' client:load>
 	</ScrollContent>
 		<Button />
