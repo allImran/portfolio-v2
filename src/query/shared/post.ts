@@ -3,5 +3,6 @@ posts[]->{
     title,
     slug,
     image,
-    detail
+    detail,
+    _updatedAt
 }`
