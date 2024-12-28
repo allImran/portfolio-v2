@@ -4,7 +4,7 @@ import Layout from "../layouts/Layout.astro";
 import CardList from '../components/card/index.vue'
 import { loadQuery } from '@lib/loadQuery'
 import { blogQuery } from '@/query/blog'
-import { type Blog, type Post } from '@sanity/types'
+import { type Blog } from '@sanity/types'
 
 const { data: blog } = await loadQuery<Blog>({
   query: blogQuery

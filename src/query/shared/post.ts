@@ -4,5 +4,7 @@ posts[]->{
     slug,
     image,
     detail,
+    externalLink,
+    authors,
     _updatedAt
 }`

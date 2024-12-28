@@ -1,8 +1,8 @@
 
 <script setup lang="ts">
-import { urlForImage } from '@/lib/urlForImage'
 import { type Post } from '@sanity/types'
 import { useCard } from './useCard';
+import Author from '../Author.vue';
 const props = defineProps<{
     item: Post
 }>()
@@ -12,9 +12,9 @@ const { postImage, postUpdatedAt } = useCard({item: props.item})
 
 <template>
     <div class="rounded overflow-hidden shadow-lg">
-        <a href="#"></a>
+        <a :href="item.externalLink"></a>
         <div class="relative">
-            <a href="#">
+            <a :href="item.externalLink">
                 <img 
                     class="w-full"
                     :src="postImage"
@@ -35,7 +35,7 @@ const { postImage, postUpdatedAt } = useCard({item: props.item})
         </div>
         <div class="px-6 py-4">
             <a 
-                href="#"
+                :href="item.externalLink"
                 class="font-semibold text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out"
             >
                 {{  item.title }}
@@ -44,15 +44,7 @@ const { postImage, postUpdatedAt } = useCard({item: props.item})
                {{ item.detail }}
             </p>
 
-            <div class="flex items- mt-10">
-                <a href="#"><img class="w-10 h-10 rounded-full mr-4" src="https://tailwindcss.com/img/jonathan.jpg"
-                        alt="Avatar of Jonathan Reinink"></a>
-                <div class="text-sm">
-                    <a href="#" class="text-gray-900 font-semibold leading-none hover:text-indigo-600">Jonathan
-                        Reinink</a>
-                    <p class="text-gray-600">Aug 18</p>
-                </div>
-            </div>
+            <Author :author="item.authors?.[0]"/>
         </div>
     </div>
 </template>
