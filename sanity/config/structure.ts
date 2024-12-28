@@ -3,7 +3,7 @@ import {singletonDocumentListItems, filteredDocumentListItems} from 'sanity-plug
 
 export const structure = (S: any, context: any) =>
   S.list()
-    .title('Code Builder')
+    .title('Al Emran')
     .items([
       // Create a list item for each singleton document in your schema that links directly to a document view
       ...singletonDocumentListItems({S, context}),

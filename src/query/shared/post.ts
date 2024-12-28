@@ -5,6 +5,10 @@ posts[]->{
     image,
     detail,
     externalLink,
-    authors,
+    authors[]->{
+        name,
+        image,
+        slug,
+    },
     _updatedAt
 }`

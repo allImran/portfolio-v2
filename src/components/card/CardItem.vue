@@ -44,7 +44,7 @@ const { postImage, postUpdatedAt } = useCard({item: props.item})
                {{ item.detail }}
             </p>
 
-            <Author :author="item.authors?.[0]"/>
+            <!-- <Author :author="item.authors?.[0]"/> -->
         </div>
     </div>
 </template>
