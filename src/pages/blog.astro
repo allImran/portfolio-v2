@@ -5,16 +5,22 @@ import CardList from '../components/card/index.vue'
 import { loadQuery } from '@lib/loadQuery'
 import { blogQuery } from '@/query/blog'
 import { type Blog } from '@sanity/types'
+import Navigation from "@/components/Navigation.vue";
 
 const { data: blog } = await loadQuery<Blog>({
   query: blogQuery
 })
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Blog | Al Emran">
+	<div class="relative">
+		<Navigation class="fixed bottom-1 left-1/2 transform " />
+	</div>
 	<div class="flex flex-col min-h-screen">
 		<div class="flex-grow w-full"> 
-			<CardList items={blog.pageBuilder?.posts as any}></CardList>
+			<CardList 
+				items={blog.pageBuilder?.posts as any}
+			></CardList>
 		</div>
 	</div>
 </Layout>

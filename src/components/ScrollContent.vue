@@ -28,7 +28,9 @@ onMounted(() => {
     document.documentElement.style.setProperty('--scale', config.scale.toString())
     document.documentElement.style.setProperty('--font', config.font.toString())
     document.documentElement.dataset.svg = config.svg ? 'true' : 'false'
-    video!.src = config.src
+    if(video?.src){
+      video.src = config.src
+    }
     font.disabled = config.svg
   }
 
